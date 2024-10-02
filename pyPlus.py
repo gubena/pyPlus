@@ -4,7 +4,7 @@ def title(text):
         print(text)
         print("======================================")
     else:
-        raise TypeError("INPUT ERROR: Input not str")
+        raise TypeError("INPUT ERROR: Input not STR")
 
 def inputForceType(text, varType):
     while True:
@@ -16,7 +16,7 @@ def inputForceType(text, varType):
             try:
                 int(var)
             except ValueError:
-                title("INPUT ERROR: Expected INT input")
+                title("INPUT ERROR: Expected input of type INT")
             else:
                 return int(var)
 
@@ -24,7 +24,7 @@ def inputForceType(text, varType):
             try:
                 float(var)
             except ValueError:
-                title("INPUT ERROR: Expected FLOAT input")
+                title("INPUT ERROR: Expected input of type FLOAT")
             else:
                 return float(var)
             
